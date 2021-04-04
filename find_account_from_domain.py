@@ -12,6 +12,4 @@ if (os.getuid() != 0):
 
 os.chdir('/etc/valiases')
 
-#if os.path.isfile(/etc/valiases/argv[1]:
-#print('Domain ' + str(sys.argv[1]) + ' belongs to cPanel account: ' + str(os.path.owner(sys.argv[1])))
 print('Domain ' + str(sys.argv[1]) + ' belongs to cPanel account: ' + str(pwd.getpwuid(os.stat(sys.argv[1]).st_uid).pw_name))
